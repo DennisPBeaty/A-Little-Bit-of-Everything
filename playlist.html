@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/playlist.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <title>Playlists</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js">
+    </script>
+    <script type="text/javascript">
+      $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+          $('nav').addClass('black');
+        }
+        else{
+          $('nav').removeClass('black');
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="logo">
+        <img src="images/logo.png" alt="LOGO">
+        </div>
+        <ul>
+          <li><a href="home.html" class="button hvr-underline-from-left">Home
+
+          </a></li>
+          <li><a href="artist.html" class="button hvr-underline-from-left">Top 5 Artists
+
+          </a></li>
+          <li><a href="playlist.html" class="button hvr-underline-from-left">Playlists
+
+          </a></li>
+          <li><a href="year.html" class="button hvr-underline-from-left">Year in Review
+
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+
+<slider>
+  <slide><a href="electronic.html"><img src="images/electronic.jpg" alt="Playlist Photo"><p>Electronic</p></a></slide>
+  <slide><a href="good.html"><img src="images/good.jpg" alt="Playlist Photo"><p>Good Vibes</p></a></slide>
+  <slide><a href="hype.html"><img src="images/hype2.jpg" alt="Playlist Photo"><p>Hype</p></a></slide>
+  <slide><a href="chill.html"><img src="images/chill.jpg" alt="Playlist Photo"><p>Chill & Relax</p></a></slide>
+
+</slider>
+
+  </body>
+</html>
